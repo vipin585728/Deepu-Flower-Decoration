@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Deepu Flower Decoration | Wedding & Event Decoration</title>
+  <meta name="description" content="Deepu Flower Decoration - Wedding stage, mandap, car, room, haldi and event decoration booking.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fffaf4;
+      color: #292929;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* TOP AUTO-SCROLL TICKER FOR 9 CARDS */
+    .top-ticker {
+      background: #35091f;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+      border-bottom: 2px solid #ffd166;
+    }
+
+    .ticker-track {
+      display: inline-flex;
+      gap: 15px;
+      animation: scrollTicker 35s linear infinite;
+    }
+
+    .ticker-track:hover {
+      animation-play-state: paused;
+    }
+
+    .ticker-card {
+      width: 220px;
+      height: 130px;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid #ffd166;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      position: relative;
+    }
+
+    .ticker-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes scrollTicker {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-235px * 9));
+      }
+    }
+
+    /* HEADER */
+    header {
+      background: #5b1238;
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      min-width: 0;
+    }
+
+    .logo {
+      width: 85px;
+      height: 85px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #ffd166;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .brand h1 {
+      font-size: 24px;
+      line-height: 1.2;
+      color: #fff;
+    }
+
+    .brand p {
+      font-size: 13px;
+      color: #ffe2b7;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .call-btn {
+      background: #ffd166;
+      color: #42102b;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .call-btn:hover {
+      background: #ffc107;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 480px;
+      padding: 70px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(rgba(38, 10, 28, 0.75), rgba(38, 10, 28, 0.75)),
+        url("hero.jpg.jpeg") center/cover no-repeat,
+        #75264e;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h2 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      color: #ffd166;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      color: #fdfdfd;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin: 6px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #ffd166;
+      color: #42102b;
+    }
+
+    .btn-whatsapp {
+      background: #20b858;
+      color: white;
+    }
+
+    /* COMMON SECTIONS */
+    section {
+      padding: 60px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #5b1238;
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+
+    /* SERVICES */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
+      border: 1px solid #fae1d0;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(91,18,56,0.15);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .service-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .service-info h3 {
+      color: #5b1238;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .service-info p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+
+    .small-btn {
+      display: inline-block;
+      background: #5b1238;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .small-btn:hover {
+      background: #75264e;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #f8eaf0;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 10px;
+      padding: 16px 24px;
+      min-width: 160px;
+      font-weight: bold;
+      color: #5b1238;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border: 1px solid #f3d1df;
+    }
+
+    /* BOOKING */
+    .booking {
+      background: white;
+    }
+
+    .booking-form {
+      max-width: 680px;
+      margin: auto;
+      background: #fffaf4;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      border: 1px solid #fae1d0;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #5b1238;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #dfccc0;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      background: white;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #5b1238;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      font-size: 17px;
+      padding: 14px;
+      border-radius: 8px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #5b1238;
+      color: white;
+      text-align: center;
+    }
+
+    .contact .section-title {
+      color: white;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .contact a {
+      color: #ffd166;
+      font-weight: bold;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 20px;
+      background: #35091f;
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* FLOATING WHATSAPP */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #20b858;
+      color: white;
+      font-size: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: transform 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 900px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .brand {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .services {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      nav {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .ticker-card {
+        width: 160px;
+        height: 100px;
+      }
+
+      @keyframes scrollTicker {
+        100% {
+          transform: translateX(calc(-175px * 9));
+        }
+      }
+
+      header {
+        padding: 12px;
+      }
+
+      .logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      .brand h1 {
+        font-size: 20px;
+      }
+
+      .brand p {
+        font-size: 11px;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+
+      .call-btn {
+        padding: 8px 14px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 380px;
+        padding: 50px 18px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      section {
+        padding: 45px 16px;
+      }
+
+      .section-title {
+        font-size: 26px;
+      }
+
+      .services {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .booking-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP AUTO-SCROLL TICKER FOR 9 CARDS -->
+  <div class="top-ticker">
+    <div class="ticker-track">
+      <div class="ticker-card"><img src="./offer1.png.jpeg" alt="Cold Fire Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer2.png" alt="Wedding Car Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer3.png" alt="Balloon Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer4.png" alt="Grand Stage Special Offer"></div>
+      <div class="ticker-card"><img src="./smoke.jpg.jpeg" alt="Smoke Matka Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer6.png" alt="Premium Mandap Setup Offer"></div>
+      <div class="ticker-card"><img src="./offer7.png" alt="Grand Stage Setup Offer"></div>
+      <div class="ticker-card"><img src="./offer8.png" alt="Haldi Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer9.png" alt="Stage Setup Offer"></div>
+
+      <div class="ticker-card"><img src="./offer1.png.jpeg" alt="Cold Fire Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer2.png" alt="Wedding Car Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer3.png" alt="Balloon Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer4.png" alt="Grand Stage Special Offer"></div>
+      <div class="ticker-card"><img src="./smoke.jpg.jpeg" alt="Smoke Matka Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer6.png" alt="Premium Mandap Setup Offer"></div>
+      <div class="ticker-card"><img src="./offer7.png" alt="Grand Stage Setup Offer"></div>
+      <div class="ticker-card"><img src="./offer8.png" alt="Haldi Decoration Offer"></div>
+      <div class="ticker-card"><img src="./offer9.png" alt="Stage Setup Offer"></div>
+    </div>
+  </div>
+  <!-- HEADER -->
+  <header>
+    <div class="brand">
+      <img class="logo" src=".logo.png.jpeg" alt="Deepu Flower Decoration Logo">
+      <div>
+        <h1>Deepu Flower Decoration</h1>
+        <p>Wedding • Stage • Event Decoration</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+      <a class="call-btn" href="tel:6389275401">Call Now</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>आपके हर खास पल को बनाएं यादगार</h2>
+      <p>
+        Wedding Stage, Mandap, Flower Decoration, Car Decoration,
+        Haldi और सभी तरह की सजावट के लिए संपर्क करें।
+      </p>
+      <a class="btn btn-primary" href="#services">हमारी Services</a>
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/916389275401"
+         target="_blank" rel="noopener">
+        WhatsApp करें
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2 class="section-title">हमारी Decoration Services</h2>
+    <p class="section-subtitle">
+      आपके कार्यक्रम के लिए सुंदर और आकर्षक सजावट
+    </p>
+
+    <div class="services">
+
+      <div class="service-card">
+        <img src="florat.jpg.jpeg" alt="Wedding Stage Decoration">
+        <div class="service-info">
+          <h3>Wedding Stage</h3>
+          <p>शादी के लिए खूबसूरत फूलों वाला स्टेज।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="mandap.jpg.jpeg" alt="Wedding Mandap Decoration">
+        <div class="service-info">
+          <h3>Mandap Decoration</h3>
+          <p>शुभ विवाह के लिए आकर्षक मंडप सजावट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Car.jpg.jpeg" alt="Wedding Car Decoration">
+        <div class="service-info">
+          <h3>Car Decoration</h3>
+          <p>फूलों से सजी सुंदर वेडिंग कार।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Room.jpg.jpeg" alt="Room Decoration">
+        <div class="service-info">
+          <h3>Room Decoration</h3>
+          <p>खास मौकों के लिए रोमांटिक रूम डेकोरेशन।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Haldi.jpg.jpeg" alt="Haldi Decoration">
+        <div class="service-info">
+          <h3>Haldi Decoration</h3>
+          <p>हल्दी और मेहंदी के लिए रंगीन सजावट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="Selfie.jpg.jpeg" alt="Selfie Point Decoration">
+        <div class="service-info">
+          <h3>Selfie Point</h3>
+          <p>मेहमानों के लिए सुंदर फोटो और सेल्फी पॉइंट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="smoke.jpg.jpeg" alt="Wedding Special Effects">
+        <div class="service-info">
+          <h3>Special Effects</h3>
+          <p>कार्यक्रम के लिए खास इफेक्ट्स और सजावट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="florat.jpg.jpeg" alt="Flower Decoration">
+        <div class="service-info">
+          <h3>Flower Decoration</h3>
+          <p>ताजे और आर्टिफिशियल फूलों से सजावट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="./event.jpg" alt="Event Decoration">
+        <div class="service-info">
+          <h3>Event Decoration</h3>
+          <p>शादी, पार्टी और अन्य कार्यक्रमों की सजावट।</p>
+          <a class="small-btn" href="#booking">बुकिंग करें</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2 class="section-title">हमारे बारे में</h2>
+    <p>
+      Deepu Flower Decoration में आपका स्वागत है।
+      हमारा उद्देश्य आपके खास कार्यक्रमों को सुंदर और यादगार बनाना है।
+      अपनी जरूरत और बजट के अनुसार सजावट के लिए हमसे संपर्क करें।
+    </p>
+
+    <div class="features">
+      <div class="feature">🌸 सुंदर सजावट</div>
+      <div class="feature">💐 अलग-अलग Designs</div>
+      <div class="feature">🤝 ग्राहक सहायता</div>
+      <div class="feature">📱 आसान Booking</div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking" id="booking">
+    <h2 class="section-title">Booking करें</h2>
+    <p class="section-subtitle">
+      नीचे जानकारी भरें। आपका मैसेज WhatsApp पर खुलेगा।
+    </p>
+
+    <form class="booking-form" id="bookingForm">
+
+      <div class="form-group">
+        <label for="name">आपका नाम</label>
+        <input type="text" id="name" placeholder="अपना नाम लिखें" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">मोबाइल नंबर</label>
+        <input type="tel" id="phone" placeholder="अपना मोबाइल नंबर" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service">कौन-सी Decoration चाहिए?</label>
+        <select id="service" required>
+          <option value="">Service चुनें</option>
+          <option>Wedding Stage Decoration</option>
+          <option>Mandap Decoration</option>
+          <option>Car Decoration</option>
+          <option>Room Decoration</option>
+          <option>Haldi Decoration</option>
+          <option>Selfie Point</option>
+          <option>Special Effects</option>
+          <option>Flower Decoration</option>
+          <option>Other Event Decoration</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">कार्यक्रम की तारीख</label>
+        <input type="date" id="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="location">कार्यक्रम की जगह</label>
+        <input type="text" id="location" placeholder="गांव, शहर या venue" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">अन्य जानकारी (वैकल्पिक)</label>
+        <textarea id="message" placeholder="बजट, डिजाइन या अन्य जरूरत लिखें"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-whatsapp submit-btn">
+        WhatsApp पर Booking भेजें
+      </button>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>अपनी Decoration Booking के लिए आज ही संपर्क करें।</p>
+    <p>📞 फोन: <a href="tel:6389275401">63892 75401</a></p>
+    <p>💬 WhatsApp:
+      <a href="https://wa.me/916389275401"
+         target="_blank" rel="noopener">
+        WhatsApp पर मैसेज करें
+      </a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Deepu Flower Decoration. All Rights Reserved.</p>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a class="whatsapp-float"
+     href="https://wa.me/916389275401"
+     target="_blank"
+     rel="noopener"
+     aria-label="WhatsApp पर संपर्क करें">💬</a>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+      const location = document.getElementById("location").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      const whatsappMessage =
+        "Namaste Deepu Flower Decoration!%0A%0A" +
+        "Mujhe decoration booking karani hai.%0A%0A" +
+        "Naam: " + encodeURIComponent(name) + "%0A" +
+        "Mobile: " + encodeURIComponent(phone) + "%0A" +
+        "Service: " + encodeURIComponent(service) + "%0A" +
+        "Date: " + encodeURIComponent(date) + "%0A" +
+        "Location: " + encodeURIComponent(location) + "%0A" +
+        "Other Details: " + encodeURIComponent(message);
+
+      const whatsappURL =
+        "https://wa.me/916389275401?text=" + whatsappMessage;
+
+      window.open(whatsappURL, "_blank");
+    });
+  </script>
+
+</body>
+</html>
